@@ -1,8 +1,11 @@
 package com.example.www.stringcalculatorv0;
 
+import lombok.Getter;
+
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
+@Getter
 public class StringCalculator {
 
     public static final String DEFAULT_DELIMETER = ",|:";

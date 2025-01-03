@@ -14,17 +14,8 @@ java {
     }
 }
 
-allprojects {
-    repositories {
-        mavenCentral()
-    }
-}
-
-bootJar {
-    enabled = false
-}
-jar {
-    enabled = false
+repositories {
+    mavenCentral()
 }
 
 dependencies {
@@ -35,12 +26,4 @@ dependencies {
 
 tasks.named('test') {
     useJUnitPlatform()
-}
-// 루트 프로젝트 build.gradle
-subprojects {
-    apply plugin: 'io.freefair.lombok'
-
-    repositories {
-        mavenCentral()
-    }
 }

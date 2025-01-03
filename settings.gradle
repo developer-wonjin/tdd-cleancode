@@ -1,1 +1,3 @@
 rootProject.name = 'tdd-cleancode'
+include 'string-calculator-v0'
+include 'string-calculator-v1'
